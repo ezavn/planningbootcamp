@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    @apply font-body;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+@layer components {
+  .page-container {
+    max-width: 1170px;
+    @apply mx-auto;
+  }
+  .page-container--fluid {
+    max-width: 1500px;
+    @apply mx-auto;
+  }
+  @media (max-width: 1024px) {
+    .page-container,
+    .page-container--fluid {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.work-heading {
+  position: relative;
+}
+
+.work-heading::before {
+  content: "";
+  width: 44px;
+  height: 2px;
+  background-color: blue;
+  position: absolute;
+  top: 100%;
+  background-image: linear-gradient(to right, #7bd4ff, #037dd0);
+}
+
+.ticket {
+  &-item {
+    &:first-child {
+      .ticket-header {
+        background-image: linear-gradient(to right, #4900e0, #bb00f0);
+      }
+    }
+    &:nth-child(2) {
+      .ticket-header {
+        background-image: linear-gradient(to right, #f4c025, #fcfb48);
+      }
+    }
+    &:nth-child(3) {
+      .ticket-header {
+        background-image: linear-gradient(to bottom, #f4651a, #f6820a);
+      }
+    }
+    &:nth-child(4) {
+      .ticket-header {
+        background-image: linear-gradient(to bottom, #61c67d, #349cf1);
+      }
+    }
+  }
+  &-header {
+    position: relative;
+    font-weight: 700;
+    height: 175px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 35px 0px 35px 35px;
+    &.--black {
+      color: #000;
+    }
+    p {
+      font-size: 22px;
+    }
+    .title {
+      font-size: 22px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+      span {
+        font-size: 35px;
+      }
+    }
+    .condition {
+      position: absolute;
+      bottom: -18px;
+      width: 270px;
+      padding: 8px 0 8px 0;
+      border-radius: 50px;
+      background-color: #000;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+      color: white;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+    }
+  }
+  &-content {
+    height: 346px;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #000;
+    padding: 35px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .desc {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .btn {
+      background-image: linear-gradient(to right, #53dbfe, #53f9da);
+      height: 57px;
+      padding-left: 75px;
+      padding-right: 75px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 700;
+      box-shadow: 2px 3px 17px rgba(123, 212, 255, 0.92);
+      border-radius: 8px;
+    }
+  }
+}
+
+.ticket-header {
+  &.header-1 {
+    background-image: linear-gradient(to right, #4900e0, #bb00f0);
+  }
+  &.header-2 {
+    background-image: linear-gradient(to right, #f4c025, #fcfb48) !important;
+  }
+  &.header-3 {
+    background-image: linear-gradient(to bottom, #f4651a, #f6820a) !important;
+  }
+  &.header-4 {
+    background-image: linear-gradient(to bottom, #61c67d, #349cf1) !important;
+  }
+}
+
+.pay-info {
+  span {
+    font-weight: 700;
+    font-size: 24px;
+    @apply text-lightBlue1;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.backtotop {
+  background: linear-gradient(
+    90deg,
+    #f24923 2.55%,
+    rgba(245, 103, 40, 0.976154) 42.13%,
+    rgba(249, 149, 47, 0.94) 102.13%
+  );
+}
+
+.footer {
+  background-image: linear-gradient(to bottom, #156baf, #1c0e4e);
+}
+
+.register-btn-popup {
+  background-image: linear-gradient(to right, #156baf, #1c0e4e);
+}
+
+.countdown {
+  background-image: linear-gradient(to right, #54fdd7 0.01%, #53dbfe 99.98%);
+}
+
+.register-btn {
+  background: linear-gradient(
+    90deg,
+    #f24923 2.55%,
+    rgba(245, 103, 40, 0.976154) 42.13%,
+    rgba(249, 149, 47, 0.94) 102.13%
+  );
+  box-shadow: 2px 3px 17px rgba(123, 212, 255, 0.92);
+}
+
+.ticket-slide .slick-dots li.slick-active button:before,
+.reason-slide .slick-dots li.slick-active button:before,
+.coach-slide .slick-dots li.slick-active button:before {
+  color: white !important;
+}
+.ticket-slide .slick-dots li button:before,
+.reason-slide .slick-dots li button:before,
+.coach-slide .slick-dots li button:before {
+  color: white;
+}
