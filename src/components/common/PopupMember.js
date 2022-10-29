@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { usePopup } from "../../contexts/popupContext";
 import Bx from "wow-bx24";
 
-const PopupRegister = () => {
+const PopupMember = () => {
   let f_rid = "1214";
   let f_source = "WEBFORM";
   const f_query = window.location.search;
@@ -14,7 +14,7 @@ const PopupRegister = () => {
   }
   const $bx = new Bx();
   const date = new Date().toLocaleDateString();
-  const { show, setShow } = usePopup();
+  const { showMember, setShowMember } = usePopup();
   const [load, setLoad] = useState(false);
   const [data, setData] = useState({
     name: "",
@@ -53,62 +53,18 @@ const PopupRegister = () => {
       .then((result) => {
         setLoad(false);
         alert("Đăng ký thành công!");
-        if (data.product === "diamond") {
-          $bx.call("crm.lead.productrows.set", {
-            id: result.result,
-            rows: [
-              {
-                PRODUCT_ID: 16286,
-                PRICE: 0,
-                QUANTITY: 1,
-                TAX_INCLUDED: "Y",
-                TAX_RATE: 8,
-              },
-            ],
-          });
-        }
-        if (data.product === "gold") {
-          $bx.call("crm.lead.productrows.set", {
-            id: result.result,
-            rows: [
-              {
-                PRODUCT_ID: 16290,
-                PRICE: 6400000,
-                QUANTITY: 1,
-                TAX_INCLUDED: "Y",
-                TAX_RATE: 8,
-              },
-            ],
-          });
-        }
-        if (data.product === "member") {
-          $bx.call("crm.lead.productrows.set", {
-            id: result.result,
-            rows: [
-              {
-                PRODUCT_ID: 16292,
-                PRICE: 7400000,
-                QUANTITY: 1,
-                TAX_INCLUDED: "Y",
-                TAX_RATE: 8,
-              },
-            ],
-          });
-        }
-        if (data.product === "standard") {
-          $bx.call("crm.lead.productrows.set", {
-            id: result.result,
-            rows: [
-              {
-                PRODUCT_ID: 16294,
-                PRICE: 8900000,
-                QUANTITY: 1,
-                TAX_INCLUDED: "Y",
-                TAX_RATE: 8,
-              },
-            ],
-          });
-        }
+        $bx.call("crm.lead.productrows.set", {
+          id: result.result,
+          rows: [
+            {
+              PRODUCT_ID: 16292,
+              PRICE: 7400000,
+              QUANTITY: 1,
+              TAX_INCLUDED: "Y",
+              TAX_RATE: 8,
+            },
+          ],
+        });
         setData({
           ...data,
           name: "",
@@ -127,7 +83,7 @@ const PopupRegister = () => {
   };
   return (
     <div>
-      {!!show && (
+      {!!showMember && (
         <div className="bg-[rgba(0,0,0,0.3)] fixed inset-0 z-[9999999] py-[20px]">
           <div className="flex flex-col md:flex-row w-[340px] md:w-[930px] mx-auto h-[610px] md:h-[630px] items-center bg-white rounded-[8px]">
             <div className="h-[100%] w-[400px] flex-shrink-0 hidden md:block">
@@ -139,7 +95,7 @@ const PopupRegister = () => {
             </div>
             <div className="flex-1 p-[20px] md:p-[50px] h-[100%] relative">
               <div
-                onClick={() => setShow(false)}
+                onClick={() => setShowMember(false)}
                 className="absolute top-[20px] right-[20px] z-20 w-[18px] h-[18px] cursor-pointer"
               >
                 <img src="/icons/close-icon.png" alt="" />
@@ -154,18 +110,6 @@ const PopupRegister = () => {
               <div>
                 <form onSubmit={handleSubmit}>
                   <div className="flex flex-col gap-y-[9px]">
-                    {/* <div>
-                      <select
-                        className="text-sm px-[17px] rounded-[6px] border border-blue bg-white outline-none w-full h-[50px] text-[#77787B]"
-                        id="gender"
-                        name="gender"
-                        onChange={handleChange}
-                      >
-                        <option>Chọn danh xưng (Anh/Chị)</option>
-                        <option value="Ông">Ông</option>
-                        <option value="Bà">Bà</option>
-                      </select>
-                    </div> */}
                     <div>
                       <input
                         className="px-[17px] rounded-[6px] bg-white outline-none w-full placeholder:text-sm placeholder:text-[#77787B] h-[50px] border border-blue"
@@ -232,13 +176,7 @@ const PopupRegister = () => {
                         onChange={handleChange}
                         required
                       >
-                        <option>Chọn sản phẩm</option>
-                        <option value="diamond">Vé Diamond (Miễn phí)</option>
-                        <option value="gold">Vé Gold Member (6.400.000)</option>
                         <option value="member">Vé Member (7.400.000)</option>
-                        <option value="standard">
-                          Vé Tiêu chuẩn (8.900.000)
-                        </option>
                       </select>
                     </div>
                   </div>
@@ -286,4 +224,4 @@ const PopupRegister = () => {
   );
 };
 
-export default PopupRegister;
+export default PopupMember;

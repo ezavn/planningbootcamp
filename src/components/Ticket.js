@@ -2,7 +2,6 @@ import React from "react";
 import Heading from "./common/Heading";
 import Slider from "react-slick";
 import { usePopup } from "../contexts/popupContext";
-import { useEffect } from "react";
 
 const Ticket = () => {
   const settings = {
@@ -15,11 +14,13 @@ const Ticket = () => {
     // autoplay: true,
     autoplaySpeed: 2000,
   };
-  const { amount, setAmount, setShow } = usePopup();
-  const openRegister = (e) => {
-    setAmount(e.target.dataset.value);
-    setShow(true);
-  };
+  const {
+    setShow,
+    setShowDiamond,
+    setShowGold,
+    setShowMember,
+    setShowStandard,
+  } = usePopup();
   return (
     <section
       id="buy-ticket"
@@ -50,11 +51,7 @@ const Ticket = () => {
                 <p className="title">Người đi cùng:</p>
                 <p className="desc">Phí GOLD MEMBER</p>
               </div>
-              <button
-                className="btn"
-                onClick={openRegister}
-                data-value="diamond"
-              >
+              <button className="btn" onClick={() => setShowDiamond(true)}>
                 MUA VÉ
               </button>
             </div>
@@ -81,7 +78,7 @@ const Ticket = () => {
                   (Teabreak, 02 Ăn trưa, Tài liệu, Hội trường, Gala dinner)
                 </p>
               </div>
-              <button className="btn" onClick={openRegister} data-value="gold">
+              <button className="btn" onClick={() => setShowGold(true)}>
                 MUA VÉ
               </button>
             </div>
@@ -105,11 +102,7 @@ const Ticket = () => {
                   (Teabreak, 02 Ăn trưa, Tài liệu, Hội trường, Gala dinner)
                 </p>
               </div>
-              <button
-                className="btn"
-                onClick={openRegister}
-                data-value="member"
-              >
+              <button className="btn" onClick={() => setShowMember(true)}>
                 MUA VÉ
               </button>
             </div>
@@ -133,11 +126,7 @@ const Ticket = () => {
                   trường, Gala dinner)
                 </p>
               </div>
-              <button
-                className="btn"
-                onClick={openRegister}
-                data-value="standard"
-              >
+              <button className="btn" onClick={() => setShowStandard(true)}>
                 MUA VÉ
               </button>
             </div>
@@ -157,9 +146,9 @@ const Ticket = () => {
                   <p className="title">Người đi cùng:</p>
                   <p className="desc">Phí GOLD MEMBER</p>
                 </div>
-                <a className="btn" href="/">
+                <button className="btn" onClick={() => setShowDiamond(true)}>
                   MUA VÉ
-                </a>
+                </button>
               </div>
             </div>
             <div className="ticket-item">
@@ -180,9 +169,9 @@ const Ticket = () => {
                     (Teabreak, 02 Ăn trưa, Tài liệu, Hội trường, Gala dinner)
                   </p>
                 </div>
-                <a className="btn" href="/">
+                <button className="btn" onClick={() => setShowGold(true)}>
                   MUA VÉ
-                </a>
+                </button>
               </div>
             </div>
             <div className="ticket-item">
@@ -200,9 +189,9 @@ const Ticket = () => {
                     (Teabreak, 02 Ăn trưa, Tài liệu, Hội trường, Gala dinner)
                   </p>
                 </div>
-                <a className="btn" href="/">
+                <button className="btn" onClick={() => setShowMember(true)}>
                   MUA VÉ
-                </a>
+                </button>
               </div>
             </div>
             <div className="ticket-item">
@@ -220,9 +209,9 @@ const Ticket = () => {
                     trường, Gala dinner)
                   </p>
                 </div>
-                <a className="btn" href="/">
+                <button className="btn" onClick={() => setShowStandard(true)}>
                   MUA VÉ
-                </a>
+                </button>
               </div>
             </div>
           </Slider>

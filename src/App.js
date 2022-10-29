@@ -20,6 +20,10 @@ import BackToTop from "./components/common/BackToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import PopupDiamond from "./components/common/PopupDiamond";
+import PopupGold from "./components/common/PopupGold";
+import PopupMember from "./components/common/PopupMember";
+import PopupStandard from "./components/common/PopupStandard";
 
 function App() {
   useEffect(() => {
@@ -42,6 +46,10 @@ function App() {
         <Place></Place>
         <Footer></Footer>
         <PopupRegister></PopupRegister>
+        <PopupDiamond></PopupDiamond>
+        <PopupGold></PopupGold>
+        <PopupMember></PopupMember>
+        <PopupStandard></PopupStandard>
         <BackToTop></BackToTop>
         <Countdown></Countdown>
       </PopupProvider>
