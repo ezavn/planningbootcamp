@@ -14,7 +14,7 @@ const PopupRegister = () => {
   }
   const $bx = new Bx();
   const date = new Date().toLocaleDateString();
-  const { show, setShow } = usePopup();
+  const { amount, show, setShow } = usePopup();
   const [load, setLoad] = useState(false);
   const [data, setData] = useState({
     name: "",
@@ -22,7 +22,7 @@ const PopupRegister = () => {
     phone: "",
     company: "",
     position: "",
-    product: "",
+    product: amount,
     sourceId: f_source,
     rid: f_rid,
     title: "CRM_FORM_PBC26_" + date,

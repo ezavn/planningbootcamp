@@ -1,10 +1,12 @@
+import { useRef } from "react";
 import { createContext, useContext, useState } from "react";
 
 const PopupContext = createContext();
 
 function PopupProvider(props) {
   const [show, setShow] = useState(false);
-  const value = { show, setShow };
+  const [amount, setAmount] = useState("");
+  const value = { amount, setAmount, show, setShow };
   return (
     <PopupContext.Provider value={value} {...props}></PopupContext.Provider>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "./common/Heading";
 import Slider from "react-slick";
 import { usePopup } from "../contexts/popupContext";
+import { useEffect } from "react";
 
 const Ticket = () => {
   const settings = {
@@ -14,7 +15,11 @@ const Ticket = () => {
     // autoplay: true,
     autoplaySpeed: 2000,
   };
-  const { setShow } = usePopup();
+  const { amount, setAmount, setShow } = usePopup();
+  const openRegister = (e) => {
+    setAmount(e.target.dataset.value);
+    setShow(true);
+  };
   return (
     <section
       id="buy-ticket"
@@ -45,7 +50,11 @@ const Ticket = () => {
                 <p className="title">Người đi cùng:</p>
                 <p className="desc">Phí GOLD MEMBER</p>
               </div>
-              <button className="btn" onClick={() => setShow(true)}>
+              <button
+                className="btn"
+                onClick={openRegister}
+                data-value="diamond"
+              >
                 MUA VÉ
               </button>
             </div>
@@ -59,7 +68,7 @@ const Ticket = () => {
               <h3 className="title">
                 <span>GOLD</span> <br /> MEMBER
               </h3>
-              <p>MIỄN PHÍ HOÀN TOÀN</p>
+              <p>MIỄN PHÍ HUẤN LUYỆN</p>
               <div className="condition">
                 Khách hàng đang coaching 1:1, Mentoring
               </div>
@@ -72,7 +81,7 @@ const Ticket = () => {
                   (Teabreak, 02 Ăn trưa, Tài liệu, Hội trường, Gala dinner)
                 </p>
               </div>
-              <button className="btn" onClick={() => setShow(true)}>
+              <button className="btn" onClick={openRegister} data-value="gold">
                 MUA VÉ
               </button>
             </div>
@@ -96,7 +105,11 @@ const Ticket = () => {
                   (Teabreak, 02 Ăn trưa, Tài liệu, Hội trường, Gala dinner)
                 </p>
               </div>
-              <button className="btn" onClick={() => setShow(true)}>
+              <button
+                className="btn"
+                onClick={openRegister}
+                data-value="member"
+              >
                 MUA VÉ
               </button>
             </div>
@@ -120,7 +133,11 @@ const Ticket = () => {
                   trường, Gala dinner)
                 </p>
               </div>
-              <button className="btn" onClick={() => setShow(true)}>
+              <button
+                className="btn"
+                onClick={openRegister}
+                data-value="standard"
+              >
                 MUA VÉ
               </button>
             </div>
