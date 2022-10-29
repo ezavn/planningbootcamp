@@ -129,6 +129,12 @@
       font-size: 24px;
       margin-bottom: 10px;
     }
+    .more {
+      // font-size: 18px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
     .btn {
       background-image: linear-gradient(to right, #53dbfe, #53f9da);
       height: 57px;
@@ -211,4 +217,14 @@
 .reason-slide .slick-dots li button:before,
 .coach-slide .slick-dots li button:before {
   color: white;
+}
+
+.coach-slide .slick-dots {
+  transform: translateY(15px) !important;
+}
+
+.coach-slide .slick-dots li {
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 2px !important;
 }

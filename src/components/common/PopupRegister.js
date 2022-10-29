@@ -140,7 +140,7 @@ const PopupRegister = () => {
             <div className="flex-1 p-[20px] md:p-[50px] h-[100%] relative">
               <div
                 onClick={() => setShow(false)}
-                className="absolute top-[20px] right-[20px] z-20 w-[15px] h-[15px] cursor-pointer"
+                className="absolute top-[20px] right-[20px] z-20 w-[18px] h-[18px] cursor-pointer"
               >
                 <img src="/icons/close-icon.png" alt="" />
               </div>

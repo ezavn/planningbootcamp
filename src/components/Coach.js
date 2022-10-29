@@ -5,23 +5,23 @@ import Slider from "react-slick";
 const coaches = [
   {
     id: 1,
+    img: "images/rita.png",
+    nickname: "RITA",
+    name: "TÔ QUÝ NGỌC CHÂU",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 2,
     img: "images/leo.png",
     nickname: "LEO",
     name: "VÕ THÁI LÂM",
     coach: "BUSINESS COACH",
   },
   {
-    id: 2,
+    id: 3,
     img: "images/kaka.png",
     nickname: "KAKA",
     name: "LÊ NGỌC ĐĂNG",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 3,
-    img: "images/rita.png",
-    nickname: "RITA",
-    name: "TÔ QUÝ NGỌC CHÂU",
     coach: "BUSINESS COACH",
   },
   {
@@ -38,46 +38,146 @@ const coaches = [
     name: "LÊ THỊ THẢO",
     coach: "BUSINESS COACH",
   },
-];
-
-const otherCoach = [
   {
-    id: 1,
+    id: 6,
     img: "images/coach.png",
     nickname: "COACH",
     name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 7,
+    img: "images/coach.png",
+    nickname: "COACH",
+    name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 8,
+    img: "images/coach.png",
+    nickname: "COACH",
+    name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 9,
+    img: "images/coach.png",
+    nickname: "COACH",
+    name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 10,
+    img: "images/coach.png",
+    nickname: "COACH",
+    name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 11,
+    img: "images/coach.png",
+    nickname: "COACH",
+    name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 12,
+    img: "images/coach.png",
+    nickname: "COACH",
+    name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+];
+
+const coaches1 = [
+  {
+    id: 1,
+    img: "images/rita.png",
+    nickname: "RITA",
+    name: "TÔ QUÝ NGỌC CHÂU",
     coach: "BUSINESS COACH",
   },
   {
     id: 2,
-    img: "images/coach.png",
-    nickname: "COACH",
-    name: "NICKNAME",
+    img: "images/leo.png",
+    nickname: "LEO",
+    name: "VÕ THÁI LÂM",
     coach: "BUSINESS COACH",
   },
   {
     id: 3,
-    img: "images/coach.png",
-    nickname: "COACH",
-    name: "NICKNAME",
+    img: "images/kaka.png",
+    nickname: "KAKA",
+    name: "LÊ NGỌC ĐĂNG",
     coach: "BUSINESS COACH",
   },
+];
+
+const coaches2 = [
   {
     id: 4,
-    img: "images/coach.png",
-    nickname: "COACH",
-    name: "NICKNAME",
+    img: "images/tony.png",
+    nickname: "TONY",
+    name: "THÁI SƠN",
     coach: "BUSINESS COACH",
   },
   {
     id: 5,
+    img: "images/tamy.png",
+    nickname: "TAMY",
+    name: "LÊ THỊ THẢO",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 6,
+    img: "images/coach.png",
+    nickname: "COACH",
+    name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+];
+
+const coaches3 = [
+  {
+    id: 7,
     img: "images/coach.png",
     nickname: "COACH",
     name: "NICKNAME",
     coach: "BUSINESS COACH",
   },
   {
-    id: 6,
+    id: 8,
+    img: "images/coach.png",
+    nickname: "COACH",
+    name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 9,
+    img: "images/coach.png",
+    nickname: "COACH",
+    name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+];
+
+const coaches4 = [
+  {
+    id: 10,
+    img: "images/coach.png",
+    nickname: "COACH",
+    name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 11,
+    img: "images/coach.png",
+    nickname: "COACH",
+    name: "NICKNAME",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 12,
     img: "images/coach.png",
     nickname: "COACH",
     name: "NICKNAME",
@@ -104,16 +204,31 @@ const Coach = () => {
         alt=""
       />
       <div className="page-container relative z-[1]">
-        <div className="md:pt-section pt-sectionMB pb-[10px]">
-          <Heading data-aos="fade-right" data-aos-duration="1000">
-            CÁC DIỄN GIẢ CHÍNH CỦA PBC 26
-          </Heading>
-          <div
-            data-aos="fade-up"
+        <div className="md:pt-section py-sectionMB">
+          <Heading
+            className="text-center"
+            data-aos="fade-down"
             data-aos-duration="1000"
-            className="hidden md:grid grid-cols-3 gap-x-[80px] gap-y-[30px]"
           >
-            {coaches.map((item) => (
+            CÁC NHÀ HUẤN LUYỆN DOANH NGHIỆP TẠI <br /> PLANNING BOOTCAMP 26
+          </Heading>
+          <div className="hidden md:grid grid-cols-3 gap-x-[80px] gap-y-[30px] mb-[30px]">
+            {coaches1.map((item) => (
+              <CoachItem key={item.id} item={item}></CoachItem>
+            ))}
+          </div>
+          <div className="hidden md:grid grid-cols-3 gap-x-[80px] gap-y-[30px] mb-[30px]">
+            {coaches2.map((item) => (
+              <CoachItem key={item.id} item={item}></CoachItem>
+            ))}
+          </div>
+          <div className="hidden md:grid grid-cols-3 gap-x-[80px] gap-y-[30px] mb-[30px]">
+            {coaches3.map((item) => (
+              <CoachItem key={item.id} item={item}></CoachItem>
+            ))}
+          </div>
+          <div className="hidden md:grid grid-cols-3 gap-x-[80px] gap-y-[30px] mb-[30px]">
+            {coaches4.map((item) => (
               <CoachItem key={item.id} item={item}></CoachItem>
             ))}
           </div>
@@ -125,7 +240,7 @@ const Coach = () => {
             </Slider>
           </div>
         </div>
-        <div className="pt-section">
+        {/* <div className="pt-section">
           <Heading data-aos="fade-up" data-aos-duration="1000">
             CÁC NHÀ HUẤN LUYỆN DOANH NGHIỆP <br />
             THAM GIA PHẦN CHIA SẺ ROUNDTABLE PBC 26
@@ -146,7 +261,7 @@ const Coach = () => {
               ))}
             </Slider>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
@@ -154,7 +269,7 @@ const Coach = () => {
 
 const CoachItem = ({ item: { img, nickname, name, coach } }) => {
   return (
-    <div className="relative">
+    <div data-aos="flip-left" data-aos-duration="1000" className="relative">
       <img className="object-cover w-full h-full" src={img} alt="" />
       <div className="absolute bottom-[20px] left-[20px]">
         <p className="text-[20px] font-bold">

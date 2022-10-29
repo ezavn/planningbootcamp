@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "./common/Heading";
 import Slider from "react-slick";
+import { usePopup } from "../contexts/popupContext";
 
 const Ticket = () => {
   const settings = {
@@ -13,6 +14,7 @@ const Ticket = () => {
     // autoplay: true,
     autoplaySpeed: 2000,
   };
+  const { setShow } = usePopup();
   return (
     <section
       id="buy-ticket"
@@ -43,9 +45,9 @@ const Ticket = () => {
                 <p className="title">Người đi cùng:</p>
                 <p className="desc">Phí GOLD MEMBER</p>
               </div>
-              <a className="btn" href="/">
+              <button className="btn" onClick={() => setShow(true)}>
                 MUA VÉ
-              </a>
+              </button>
             </div>
           </div>
           <div
@@ -70,9 +72,9 @@ const Ticket = () => {
                   (Teabreak, 02 Ăn trưa, Tài liệu, Hội trường, Gala dinner)
                 </p>
               </div>
-              <a className="btn" href="/">
+              <button className="btn" onClick={() => setShow(true)}>
                 MUA VÉ
-              </a>
+              </button>
             </div>
           </div>
           <div
@@ -94,9 +96,9 @@ const Ticket = () => {
                   (Teabreak, 02 Ăn trưa, Tài liệu, Hội trường, Gala dinner)
                 </p>
               </div>
-              <a className="btn" href="/">
+              <button className="btn" onClick={() => setShow(true)}>
                 MUA VÉ
-              </a>
+              </button>
             </div>
           </div>
           <div
@@ -118,9 +120,9 @@ const Ticket = () => {
                   trường, Gala dinner)
                 </p>
               </div>
-              <a className="btn" href="/">
+              <button className="btn" onClick={() => setShow(true)}>
                 MUA VÉ
-              </a>
+              </button>
             </div>
           </div>
         </div>

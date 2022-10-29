@@ -21,7 +21,7 @@ const Work = () => {
           <WorkItem
             className="mb-[40px] md:mb-[50px]"
             title="Hoạt động đi bộ buổi sáng & Miracle Morning"
-            img="/images/work-1.png"
+            img="/images/work-1.jpg"
             desc="Đội ngũ Nhà huấn luyện Doanh nghiệp của CBD Firm cùng các Chủ doanh nghiệp & Đội ngũ tham gia hoạt động đi bộ buổi sáng & Miracle Morning."
           ></WorkItem>
         </div>
@@ -75,9 +75,9 @@ const WorkItem = ({ title, desc, img, reverse, hasBTN, className }) => {
       <div
         data-aos="zoom-in"
         data-aos-duration="1000"
-        className="w-auto md:w-[614px] flex-shrink-0"
+        className="w-auto md:w-[614px] flex-shrink-0 rounded-[30px]"
       >
-        <img src={img} alt="" />
+        <img className="rounded-[30px]" src={img} alt="" />
       </div>
     </div>
   );
