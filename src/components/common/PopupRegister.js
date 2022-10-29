@@ -132,7 +132,7 @@ const PopupRegister = () => {
           <div className="flex flex-col md:flex-row w-[340px] md:w-[930px] mx-auto h-[610px] md:h-[630px] items-center bg-white rounded-[8px]">
             <div className="h-[100%] w-[400px] flex-shrink-0 hidden md:block">
               <img
-                className="h-[100%] rounded-tl-[8px] rounded-bl-[8px]"
+                className="h-[100%] w-full object-cover object-center  rounded-tl-[8px] rounded-bl-[8px]"
                 src="/images/intro.png"
                 alt=""
               />
