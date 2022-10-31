@@ -156,7 +156,7 @@ const Ticket = () => {
                 <h3 className="title">
                   <span>GOLD</span> <br /> MEMBER
                 </h3>
-                <p>MIỄN PHÍ HOÀN TOÀN</p>
+                <p>MIỄN PHÍ HUẤN LUYỆN</p>
                 <div className="condition">
                   Khách hàng đang coaching 1:1, Mentoring
                 </div>
