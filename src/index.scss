@@ -228,3 +228,31 @@
   height: 10px !important;
   margin: 0 2px !important;
 }
+
+.btn-scale {
+  animation: transformBtn 1000ms infinite ease-out,
+    borderPulse 1000ms infinite ease-out;
+}
+
+@keyframes borderPulse {
+  0% {
+    box-shadow: inset 0px 0px 0px 5px rgba(135, 190, 253, 0.4),
+      0px 0px 0px 0px rgba(135, 190, 253, 1);
+  }
+  100% {
+    box-shadow: inset 0px 0px 0px 3px rgba(117, 117, 255, 0.2),
+      0px 0px 0px 10px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes transformBtn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

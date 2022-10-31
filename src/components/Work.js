@@ -27,7 +27,6 @@ const Work = () => {
         </div>
         <WorkItem
           reverse
-          hasBTN
           className="mb-[40px] md:mb-[50px]"
           title="Roundtable"
           img="/images/work-2.png"

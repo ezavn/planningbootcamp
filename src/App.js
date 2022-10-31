@@ -40,7 +40,7 @@ function App() {
         <SlideShow></SlideShow>
         <Reason></Reason>
         <Coach></Coach>
-        <Agenda></Agenda>
+        {/* <Agenda></Agenda> */}
         <Work></Work>
         <Ticket></Ticket>
         <Place></Place>

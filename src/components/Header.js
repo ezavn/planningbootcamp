@@ -28,7 +28,7 @@ const Header = () => {
         </div>
         <div>
           <a
-            className="w-[200px] h-[40px] hidden md:inline-flex items-center bg-blue rounded-[23px] justify-center gap-[8px] text-[22px] font-bold"
+            className="btn-scale w-[200px] h-[40px] hidden md:inline-flex items-center bg-blue rounded-[23px] justify-center gap-[8px] text-[22px] font-bold"
             href="tel:1800 8087"
           >
             <img
