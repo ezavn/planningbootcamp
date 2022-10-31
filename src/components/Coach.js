@@ -40,51 +40,58 @@ const coaches = [
   },
   {
     id: 6,
-    img: "images/coach.png",
-    nickname: "COACH",
-    name: "NICKNAME",
+    img: "images/david.png",
+    nickname: "DAVID",
+    name: "TRẦN XUÂN HÒA",
     coach: "BUSINESS COACH",
   },
   {
     id: 7,
-    img: "images/coach.png",
-    nickname: "COACH",
-    name: "NICKNAME",
+    img: "images/emmy.png",
+    nickname: "EMMY",
+    name: "LÊ THỊ HẢI",
     coach: "BUSINESS COACH",
   },
   {
     id: 8,
-    img: "images/coach.png",
-    nickname: "COACH",
-    name: "NICKNAME",
+    img: "images/martin.png",
+    nickname: "MARTIN",
+    name: "NGUYỄN HẢI ĐẰNG",
     coach: "BUSINESS COACH",
   },
   {
     id: 9,
-    img: "images/coach.png",
-    nickname: "COACH",
-    name: "NICKNAME",
+    img: "images/neo.png",
+    nickname: "NEO",
+    name: "NGUYỄN ĐÌNH BẢO",
     coach: "BUSINESS COACH",
   },
   {
     id: 10,
-    img: "images/coach.png",
-    nickname: "COACH",
-    name: "NICKNAME",
+    img: "images/theo.png",
+    nickname: "THEO",
+    name: "VŨ BÁ THẾ",
     coach: "BUSINESS COACH",
   },
   {
     id: 11,
-    img: "images/coach.png",
-    nickname: "COACH",
-    name: "NICKNAME",
+    img: "images/jolie.png",
+    nickname: "JOLIE",
+    name: "NGUYỄN HỒNG NHẬT LÝ",
     coach: "BUSINESS COACH",
   },
   {
     id: 12,
-    img: "images/coach.png",
-    nickname: "COACH",
-    name: "NICKNAME",
+    img: "images/vova.png",
+    nickname: "VOVA",
+    name: "LÊ VIỆT CHUẨN",
+    coach: "BUSINESS COACH",
+  },
+  {
+    id: 13,
+    img: "images/tracy.png",
+    nickname: "TRACY",
+    name: "THANH HÀ",
     coach: "BUSINESS COACH",
   },
 ];
@@ -165,44 +172,201 @@ const Coach = () => {
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1000"
-              img="images/coach.png"
-              nickname="COACH"
-              name="NICKNAME"
+              img="images/david.png"
+              nickname="DAVID"
+              name="TRẦN XUÂN HÒA"
               coach="BUSINESS COACH"
             ></CoachItemOriginal>
             <CoachItemOriginal
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1200"
-              img="images/coach.png"
-              nickname="COACH"
-              name="NICKNAME"
+              img="images/emmy.png"
+              nickname="EMMY"
+              name="LÊ THỊ HẢI"
               coach="BUSINESS COACH"
             ></CoachItemOriginal>
             <CoachItemOriginal
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1400"
-              img="images/coach.png"
-              nickname="COACH"
-              name="NICKNAME"
+              img="images/martin.png"
+              nickname="MARTIN"
+              coach="BUSINESS COACH"
+              line2
+            >
+              <span className="leading-[1]">NGUYỄN HẢI ĐĂNG</span>
+            </CoachItemOriginal>
+            <CoachItemOriginal
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              data-aos-delay="1600"
+              img="images/neo.png"
+              nickname="NEO"
+              name="NGUYỄN ĐÌNH BẢO"
               coach="BUSINESS COACH"
             ></CoachItemOriginal>
             <CoachItemOriginal
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1600"
-              img="images/coach.png"
-              nickname="COACH"
-              name="NICKNAME"
+              img="images/theo.png"
+              nickname="THEO"
+              name="VŨ BÁ THẾ"
+              coach="BUSINESS COACH"
+            ></CoachItemOriginal>
+            <CoachItemOriginal
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              data-aos-delay="1600"
+              img="images/jolie.png"
+              nickname="JOLIE"
+              coach="BUSINESS COACH"
+              line2
+            >
+              <span className="leading-[1]">NGUYỄN HỒNG NHẬT LÝ</span>
+            </CoachItemOriginal>
+            <CoachItemOriginal
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              data-aos-delay="1600"
+              img="images/vova.png"
+              nickname="VOVA"
+              name="LÊ VIỆT CHUẨN"
+              coach="BUSINESS COACH"
+            ></CoachItemOriginal>
+            <CoachItemOriginal
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              data-aos-delay="1600"
+              img="images/tracy.png"
+              nickname="TRACY"
+              name="THANH HÀ"
               coach="BUSINESS COACH"
             ></CoachItemOriginal>
           </div>
           <div className="block coach-slide md:hidden">
             <Slider {...settings}>
-              {coaches.map((item) => (
-                <CoachItem key={item.id} item={item}></CoachItem>
-              ))}
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                img="images/rita.png"
+                nickname="RITA"
+                name="TÔ QUÝ NGỌC CHÂU"
+                coach="BUSINESS COACH"
+              ></CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                img="images/leo.png"
+                nickname="LEO"
+                name="VÕ THÁI LÂM"
+                coach="BUSINESS COACH"
+              ></CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+                img="images/kaka.png"
+                nickname="KAKA"
+                name="LÊ NGỌC ĐĂNG"
+                coach="BUSINESS COACH"
+              ></CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+                img="images/tony.png"
+                nickname="TONY"
+                name="THÁI SƠN"
+                coach="BUSINESS COACH"
+              ></CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+                img="images/tamy.png"
+                nickname="TAMY"
+                name="LÊ THỊ THẢO"
+                coach="BUSINESS COACH"
+              ></CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+                img="images/david.png"
+                nickname="DAVID"
+                name="TRẦN XUÂN HÒA"
+                coach="BUSINESS COACH"
+              ></CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="1200"
+                img="images/emmy.png"
+                nickname="EMMY"
+                name="LÊ THỊ HẢI"
+                coach="BUSINESS COACH"
+              ></CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="1400"
+                img="images/martin.png"
+                nickname="MARTIN"
+                coach="BUSINESS COACH"
+                line2
+              >
+                <span className="leading-[1]">NGUYỄN HẢI ĐĂNG</span>
+              </CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="1600"
+                img="images/neo.png"
+                nickname="NEO"
+                name="NGUYỄN ĐÌNH BẢO"
+                coach="BUSINESS COACH"
+              ></CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="1600"
+                img="images/theo.png"
+                nickname="THEO"
+                name="VŨ BÁ THẾ"
+                coach="BUSINESS COACH"
+              ></CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="1600"
+                img="images/jolie.png"
+                nickname="JOLIE"
+                coach="BUSINESS COACH"
+                line2
+              >
+                <span className="leading-[1]">NGUYỄN HỒNG NHẬT LÝ</span>
+              </CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="1600"
+                img="images/vova.png"
+                nickname="VOVA"
+                name="LÊ VIỆT CHUẨN"
+                coach="BUSINESS COACH"
+              ></CoachItemOriginal>
+              <CoachItemOriginal
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="1600"
+                img="images/tracy.png"
+                nickname="TRACY"
+                name="THANH HÀ"
+                coach="BUSINESS COACH"
+              ></CoachItemOriginal>
             </Slider>
           </div>
         </div>
@@ -233,13 +397,26 @@ const Coach = () => {
   );
 };
 
-const CoachItemOriginal = ({ img, nickname, name, coach, ...props }) => {
+const CoachItemOriginal = ({
+  img,
+  nickname,
+  name,
+  coach,
+  children,
+  line2,
+  ...props
+}) => {
   return (
     <div {...props} className="relative">
       <img className="object-cover w-full h-full" src={img} alt="" />
       <div className="absolute bottom-[20px] left-[20px]">
-        <p className="text-[20px] font-bold">
-          <span className="text-[40px] font-bold">{nickname}</span> {name}
+        <p
+          className={`${
+            line2 ? "items-center" : "items-baseline"
+          } text-[20px] font-bold flex gap-[5px]`}
+        >
+          <span className="text-[40px] font-bold">{nickname}</span>{" "}
+          {name || children}
         </p>
         <p className="font-bold">{coach}</p>
       </div>
@@ -252,7 +429,7 @@ const CoachItem = ({ item: { img, nickname, name, coach } }) => {
     <div className="relative">
       <img className="object-cover w-full h-full" src={img} alt="" />
       <div className="absolute bottom-[20px] left-[20px]">
-        <p className="text-[20px] font-bold">
+        <p className="text-[20px] font-bold leading-[1.2]">
           <span className="text-[40px] font-bold">{nickname}</span> {name}
         </p>
         <p className="font-bold">{coach}</p>
