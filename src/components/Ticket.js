@@ -53,6 +53,7 @@ const Ticket = () => {
           <div
             data-aos="zoom-in"
             data-aos-duration="1000"
+            data-aos-delay="200"
             className="ticket-item"
           >
             <div className="ticket-header --black">
@@ -80,6 +81,7 @@ const Ticket = () => {
           <div
             data-aos="zoom-in"
             data-aos-duration="1000"
+            data-aos-delay="400"
             className="ticket-item"
           >
             <div className="ticket-header">
@@ -104,6 +106,7 @@ const Ticket = () => {
           <div
             data-aos="zoom-in"
             data-aos-duration="1000"
+            data-aos-delay="600"
             className="ticket-item"
           >
             <div className="ticket-header">
