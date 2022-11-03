@@ -5,22 +5,16 @@ import { usePopup } from "../contexts/popupContext";
 
 const Ticket = () => {
   const settings = {
+    arrows: false,
+    lazyLoad: true,
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
-    // autoplay: true,
-    autoplaySpeed: 2000,
   };
-  const {
-    setShow,
-    setShowDiamond,
-    setShowGold,
-    setShowMember,
-    setShowStandard,
-  } = usePopup();
+  const { setShowDiamond, setShowGold, setShowMember, setShowStandard } =
+    usePopup();
   return (
     <section
       id="buy-ticket"

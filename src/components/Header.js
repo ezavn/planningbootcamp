@@ -6,7 +6,7 @@ const Header = () => {
     <section className="bg-white header">
       <div className="flex items-center justify-between page-container p-[20px]">
         <div>
-          <h1 className="hidden">PlanningBootcamp</h1>
+          <h1 className="hidden">Planning Bootcamp</h1>
           <img srcSet="/images/logo.png 2x" alt="" />
         </div>
         <div className="font-semibold text-black nav items-center gap-[45px] md:flex hidden">

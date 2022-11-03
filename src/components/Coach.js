@@ -2,100 +2,6 @@ import React from "react";
 import Heading from "./common/Heading";
 import Slider from "react-slick";
 
-const coaches = [
-  {
-    id: 1,
-    img: "images/rita.png",
-    nickname: "RITA",
-    name: "TÔ QUÝ NGỌC CHÂU",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 2,
-    img: "images/leo.png",
-    nickname: "LEO",
-    name: "VÕ THÁI LÂM",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 3,
-    img: "images/kaka.png",
-    nickname: "KAKA",
-    name: "LÊ NGỌC ĐĂNG",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 4,
-    img: "images/tony.png",
-    nickname: "TONY",
-    name: "THÁI SƠN",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 5,
-    img: "images/tamy.png",
-    nickname: "TAMY",
-    name: "LÊ THỊ THẢO",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 6,
-    img: "images/david.png",
-    nickname: "DAVID",
-    name: "TRẦN XUÂN HÒA",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 7,
-    img: "images/emmy.png",
-    nickname: "EMMY",
-    name: "LÊ THỊ HẢI",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 8,
-    img: "images/martin.png",
-    nickname: "MARTIN",
-    name: "NGUYỄN HẢI ĐẰNG",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 9,
-    img: "images/neo.png",
-    nickname: "NEO",
-    name: "NGUYỄN ĐÌNH BẢO",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 10,
-    img: "images/theo.png",
-    nickname: "THEO",
-    name: "VŨ BÁ THẾ",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 11,
-    img: "images/jolie.png",
-    nickname: "JOLIE",
-    name: "NGUYỄN HỒNG NHẬT LÝ",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 12,
-    img: "images/vova.png",
-    nickname: "VOVA",
-    name: "LÊ VIỆT CHUẨN",
-    coach: "BUSINESS COACH",
-  },
-  {
-    id: 13,
-    img: "images/tracy.png",
-    nickname: "TRACY",
-    name: "THANH HÀ",
-    coach: "BUSINESS COACH",
-  },
-];
-
 const Coach = () => {
   const settings = {
     dots: true,
@@ -106,6 +12,7 @@ const Coach = () => {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
+    lazyLoad: true,
   };
   return (
     <section id="coach" className="relative bg-darkBlue">
@@ -124,15 +31,15 @@ const Coach = () => {
             CÁC NHÀ HUẤN LUYỆN DOANH NGHIỆP TẠI <br /> PLANNING BOOTCAMP 26
           </Heading>
           <div className="hidden md:grid grid-cols-3 gap-x-[80px] gap-y-[30px] mb-[30px]">
-            <CoachItemOriginal
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               img="images/rita.png"
               nickname="RITA"
               name="TÔ QUÝ NGỌC CHÂU"
               coach="BUSINESS COACH"
-            ></CoachItemOriginal>
-            <CoachItemOriginal
+            ></CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="200"
@@ -140,8 +47,8 @@ const Coach = () => {
               nickname="LEO"
               name="VÕ THÁI LÂM"
               coach="BUSINESS COACH"
-            ></CoachItemOriginal>
-            <CoachItemOriginal
+            ></CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="400"
@@ -149,8 +56,8 @@ const Coach = () => {
               nickname="KAKA"
               name="LÊ NGỌC ĐĂNG"
               coach="BUSINESS COACH"
-            ></CoachItemOriginal>
-            <CoachItemOriginal
+            ></CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="600"
@@ -158,8 +65,8 @@ const Coach = () => {
               nickname="TONY"
               name="THÁI SƠN"
               coach="BUSINESS COACH"
-            ></CoachItemOriginal>
-            <CoachItemOriginal
+            ></CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="800"
@@ -167,8 +74,8 @@ const Coach = () => {
               nickname="TAMY"
               name="LÊ THỊ THẢO"
               coach="BUSINESS COACH"
-            ></CoachItemOriginal>
-            <CoachItemOriginal
+            ></CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1000"
@@ -176,8 +83,8 @@ const Coach = () => {
               nickname="DAVID"
               name="TRẦN XUÂN HÒA"
               coach="BUSINESS COACH"
-            ></CoachItemOriginal>
-            <CoachItemOriginal
+            ></CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1200"
@@ -185,8 +92,8 @@ const Coach = () => {
               nickname="EMMY"
               name="LÊ THỊ HẢI"
               coach="BUSINESS COACH"
-            ></CoachItemOriginal>
-            <CoachItemOriginal
+            ></CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1400"
@@ -196,8 +103,8 @@ const Coach = () => {
               line2
             >
               <span className="leading-[1]">NGUYỄN HẢI ĐĂNG</span>
-            </CoachItemOriginal>
-            <CoachItemOriginal
+            </CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1600"
@@ -205,8 +112,8 @@ const Coach = () => {
               nickname="NEO"
               name="NGUYỄN ĐÌNH BẢO"
               coach="BUSINESS COACH"
-            ></CoachItemOriginal>
-            <CoachItemOriginal
+            ></CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1600"
@@ -214,8 +121,8 @@ const Coach = () => {
               nickname="THEO"
               name="VŨ BÁ THẾ"
               coach="BUSINESS COACH"
-            ></CoachItemOriginal>
-            <CoachItemOriginal
+            ></CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1600"
@@ -225,8 +132,8 @@ const Coach = () => {
               line2
             >
               <span className="leading-[1]">NGUYỄN HỒNG NHẬT LÝ</span>
-            </CoachItemOriginal>
-            <CoachItemOriginal
+            </CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1600"
@@ -234,8 +141,8 @@ const Coach = () => {
               nickname="VOVA"
               name="LÊ VIỆT CHUẨN"
               coach="BUSINESS COACH"
-            ></CoachItemOriginal>
-            <CoachItemOriginal
+            ></CoachItem>
+            <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="1600"
@@ -243,19 +150,19 @@ const Coach = () => {
               nickname="TRACY"
               name="THANH HÀ"
               coach="BUSINESS COACH"
-            ></CoachItemOriginal>
+            ></CoachItem>
           </div>
           <div className="block coach-slide md:hidden">
             <Slider {...settings}>
-              <CoachItemOriginal
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 img="images/rita.png"
                 nickname="RITA"
                 name="TÔ QUÝ NGỌC CHÂU"
                 coach="BUSINESS COACH"
-              ></CoachItemOriginal>
-              <CoachItemOriginal
+              ></CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="200"
@@ -263,8 +170,8 @@ const Coach = () => {
                 nickname="LEO"
                 name="VÕ THÁI LÂM"
                 coach="BUSINESS COACH"
-              ></CoachItemOriginal>
-              <CoachItemOriginal
+              ></CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="400"
@@ -272,8 +179,8 @@ const Coach = () => {
                 nickname="KAKA"
                 name="LÊ NGỌC ĐĂNG"
                 coach="BUSINESS COACH"
-              ></CoachItemOriginal>
-              <CoachItemOriginal
+              ></CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="600"
@@ -281,8 +188,8 @@ const Coach = () => {
                 nickname="TONY"
                 name="THÁI SƠN"
                 coach="BUSINESS COACH"
-              ></CoachItemOriginal>
-              <CoachItemOriginal
+              ></CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="800"
@@ -290,8 +197,8 @@ const Coach = () => {
                 nickname="TAMY"
                 name="LÊ THỊ THẢO"
                 coach="BUSINESS COACH"
-              ></CoachItemOriginal>
-              <CoachItemOriginal
+              ></CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="1000"
@@ -299,8 +206,8 @@ const Coach = () => {
                 nickname="DAVID"
                 name="TRẦN XUÂN HÒA"
                 coach="BUSINESS COACH"
-              ></CoachItemOriginal>
-              <CoachItemOriginal
+              ></CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="1200"
@@ -308,8 +215,8 @@ const Coach = () => {
                 nickname="EMMY"
                 name="LÊ THỊ HẢI"
                 coach="BUSINESS COACH"
-              ></CoachItemOriginal>
-              <CoachItemOriginal
+              ></CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="1400"
@@ -319,8 +226,8 @@ const Coach = () => {
                 line2
               >
                 <span className="leading-[1]">NGUYỄN HẢI ĐĂNG</span>
-              </CoachItemOriginal>
-              <CoachItemOriginal
+              </CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="1600"
@@ -328,8 +235,8 @@ const Coach = () => {
                 nickname="NEO"
                 name="NGUYỄN ĐÌNH BẢO"
                 coach="BUSINESS COACH"
-              ></CoachItemOriginal>
-              <CoachItemOriginal
+              ></CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="1600"
@@ -337,8 +244,8 @@ const Coach = () => {
                 nickname="THEO"
                 name="VŨ BÁ THẾ"
                 coach="BUSINESS COACH"
-              ></CoachItemOriginal>
-              <CoachItemOriginal
+              ></CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="1600"
@@ -348,8 +255,8 @@ const Coach = () => {
                 line2
               >
                 <span className="leading-[1]">NGUYỄN HỒNG NHẬT LÝ</span>
-              </CoachItemOriginal>
-              <CoachItemOriginal
+              </CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="1600"
@@ -357,8 +264,8 @@ const Coach = () => {
                 nickname="VOVA"
                 name="LÊ VIỆT CHUẨN"
                 coach="BUSINESS COACH"
-              ></CoachItemOriginal>
-              <CoachItemOriginal
+              ></CoachItem>
+              <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 data-aos-delay="1600"
@@ -366,38 +273,16 @@ const Coach = () => {
                 nickname="TRACY"
                 name="THANH HÀ"
                 coach="BUSINESS COACH"
-              ></CoachItemOriginal>
+              ></CoachItem>
             </Slider>
           </div>
         </div>
-        {/* <div className="pt-section">
-          <Heading data-aos="fade-up" data-aos-duration="1000">
-            CÁC NHÀ HUẤN LUYỆN DOANH NGHIỆP <br />
-            THAM GIA PHẦN CHIA SẺ ROUNDTABLE PBC 26
-          </Heading>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="hidden md:grid grid-cols-3 gap-x-[80px] gap-y-[30px]"
-          >
-            {otherCoach.map((item) => (
-              <CoachItem key={item.id} item={item}></CoachItem>
-            ))}
-          </div>
-          <div className="coach-slide block md:hidden pb-[40px] md:pb-0">
-            <Slider {...settings}>
-              {otherCoach.map((item) => (
-                <CoachItem key={item.id} item={item}></CoachItem>
-              ))}
-            </Slider>
-          </div>
-        </div> */}
       </div>
     </section>
   );
 };
 
-const CoachItemOriginal = ({
+const CoachItem = ({
   img,
   nickname,
   name,
@@ -417,20 +302,6 @@ const CoachItemOriginal = ({
         >
           <span className="text-[40px] font-bold">{nickname}</span>{" "}
           {name || children}
-        </p>
-        <p className="font-bold">{coach}</p>
-      </div>
-    </div>
-  );
-};
-
-const CoachItem = ({ item: { img, nickname, name, coach } }) => {
-  return (
-    <div className="relative">
-      <img className="object-cover w-full h-full" src={img} alt="" />
-      <div className="absolute bottom-[20px] left-[20px]">
-        <p className="text-[20px] font-bold leading-[1.2]">
-          <span className="text-[40px] font-bold">{nickname}</span> {name}
         </p>
         <p className="font-bold">{coach}</p>
       </div>
