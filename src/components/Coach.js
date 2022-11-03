@@ -60,7 +60,6 @@ const Coach = () => {
             <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="600"
               img="images/tony.png"
               nickname="TONY"
               name="THÁI SƠN"
@@ -69,7 +68,7 @@ const Coach = () => {
             <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="800"
+              data-aos-delay="200"
               img="images/tamy.png"
               nickname="TAMY"
               name="LÊ THỊ THẢO"
@@ -78,7 +77,7 @@ const Coach = () => {
             <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1000"
+              data-aos-delay="400"
               img="images/david.png"
               nickname="DAVID"
               name="TRẦN XUÂN HÒA"
@@ -87,7 +86,6 @@ const Coach = () => {
             <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1200"
               img="images/emmy.png"
               nickname="EMMY"
               name="LÊ THỊ HẢI"
@@ -96,7 +94,7 @@ const Coach = () => {
             <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1400"
+              data-aos-delay="200"
               img="images/martin.png"
               nickname="MARTIN"
               coach="BUSINESS COACH"
@@ -107,7 +105,7 @@ const Coach = () => {
             <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1600"
+              data-aos-delay="400"
               img="images/neo.png"
               nickname="NEO"
               name="NGUYỄN ĐÌNH BẢO"
@@ -116,7 +114,6 @@ const Coach = () => {
             <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1800"
               img="images/theo.png"
               nickname="THEO"
               name="VŨ BÁ THẾ"
@@ -125,7 +122,7 @@ const Coach = () => {
             <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="2000"
+              data-aos-delay="200"
               img="images/jolie.png"
               nickname="JOLIE"
               coach="BUSINESS COACH"
@@ -136,7 +133,7 @@ const Coach = () => {
             <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="2200"
+              data-aos-delay="400"
               img="images/vova.png"
               nickname="VOVA"
               name="LÊ VIỆT CHUẨN"
@@ -145,7 +142,6 @@ const Coach = () => {
             <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="2400"
               img="images/tracy.png"
               nickname="TRACY"
               name="THANH HÀ"
