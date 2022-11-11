@@ -119,7 +119,7 @@ const Coach = () => {
               name="VŨ BÁ THẾ"
               coach="BUSINESS COACH"
             ></CoachItem>
-            <CoachItem
+            {/* <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-delay="200"
@@ -129,11 +129,10 @@ const Coach = () => {
               line2
             >
               <span className="leading-[1]">NGUYỄN HỒNG NHẬT LÝ</span>
-            </CoachItem>
+            </CoachItem> */}
             <CoachItem
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="400"
               img="images/vova.png"
               nickname="VOVA"
               name="LÊ VIỆT CHUẨN"
@@ -231,7 +230,7 @@ const Coach = () => {
                 name="VŨ BÁ THẾ"
                 coach="BUSINESS COACH"
               ></CoachItem>
-              <CoachItem
+              {/* <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"
                 img="images/jolie.png"
@@ -240,7 +239,7 @@ const Coach = () => {
                 line2
               >
                 <span className="leading-[1]">NGUYỄN HỒNG NHẬT LÝ</span>
-              </CoachItem>
+              </CoachItem> */}
               <CoachItem
                 data-aos="flip-left"
                 data-aos-duration="1000"

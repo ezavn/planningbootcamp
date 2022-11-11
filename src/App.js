@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Reason from "./components/Reason";
 import Coach from "./components/Coach";
-import Agenda from "./components/Agenda";
 import Work from "./components/Work";
 import Ticket from "./components/Ticket";
 import Place from "./components/Place";
@@ -24,6 +23,7 @@ import PopupDiamond from "./components/common/PopupDiamond";
 import PopupGold from "./components/common/PopupGold";
 import PopupMember from "./components/common/PopupMember";
 import PopupStandard from "./components/common/PopupStandard";
+import AgendaV2 from "./components/AgendaV2";
 
 function App() {
   useEffect(() => {
@@ -40,7 +40,7 @@ function App() {
         <SlideShow></SlideShow>
         <Reason></Reason>
         <Coach></Coach>
-        {/* <Agenda></Agenda> */}
+        <AgendaV2></AgendaV2>
         <Work></Work>
         <Ticket></Ticket>
         <Place></Place>

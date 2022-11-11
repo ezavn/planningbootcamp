@@ -26,7 +26,7 @@ const BackToTop = () => {
     <>
       <div
         onClick={scrollToTop}
-        className={`backtotop cursor-pointer w-[38px] h-[38px] fixed right-[15px] bottom-[120px] md:bottom-[100px] bg-red flex items-center justify-center rounded-[8px] transition duration-700 z-[99] ${
+        className={`backtotop cursor-pointer w-[38px] h-[38px] fixed right-[15px] bottom-[115px] md:bottom-[90px] bg-red flex items-center justify-center rounded-[8px] transition duration-700 z-[99] ${
           visible ? "translate-x-0" : "translate-x-[200px]"
         }`}
       >

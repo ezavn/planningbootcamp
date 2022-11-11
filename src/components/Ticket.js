@@ -5,7 +5,7 @@ import { usePopup } from "../contexts/popupContext";
 
 const Ticket = () => {
   const settings = {
-    arrows: false,
+    arrows: true,
     lazyLoad: true,
     dots: true,
     infinite: true,

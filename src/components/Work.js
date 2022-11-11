@@ -20,9 +20,9 @@ const Work = () => {
         <div data-aos="fade-right" data-aos-duration="1000">
           <WorkItem
             className="mb-[40px] md:mb-[50px]"
-            title="Hoạt động đi bộ buổi sáng & Miracle Morning"
+            title="Hoạt động chạy bộ buổi sáng & Miracle Morning"
             img="/images/work-1.jpg"
-            desc="Đội ngũ Nhà huấn luyện Doanh nghiệp của CBD Firm cùng các Chủ doanh nghiệp & Đội ngũ tham gia hoạt động đi bộ buổi sáng & Miracle Morning."
+            desc="Đội ngũ Nhà huấn luyện Doanh nghiệp của CBD Firm cùng các Chủ doanh nghiệp & Đội ngũ tham gia hoạt động chạy bộ buổi sáng (5h - 6h sáng Thứ sáu, 16.12) & Miracle Morning (5h - 6h sáng Thứ bảy, 17.12)"
           ></WorkItem>
         </div>
         <WorkItem

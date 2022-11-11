@@ -168,7 +168,7 @@ const PopupRegister = () => {
                     </div> */}
                     <div>
                       <input
-                        className="px-[17px] rounded-[6px] bg-white outline-none w-full placeholder:text-sm placeholder:text-[#77787B] h-[50px] border border-blue"
+                        className="px-[17px] rounded-[6px] bg-white outline-none w-full placeholder:text-sm placeholder:text-[#77787B] h-[50px] border border-blue text-[#000]"
                         type="text"
                         id="name"
                         name="name"
@@ -180,7 +180,7 @@ const PopupRegister = () => {
                     </div>
                     <div>
                       <input
-                        className="px-[17px] rounded-[6px] border border-blue bg-white outline-none w-full placeholder:text-sm placeholder:text-[#77787B] h-[50px]"
+                        className="px-[17px] rounded-[6px] border border-blue bg-white outline-none w-full placeholder:text-sm placeholder:text-[#77787B] h-[50px] text-[#000]"
                         id="email"
                         name="email"
                         placeholder="Nhập Email"
@@ -192,7 +192,7 @@ const PopupRegister = () => {
                     </div>
                     <div>
                       <input
-                        className="px-[17px] rounded-[6px] border border-blue bg-white outline-none w-full placeholder:text-sm placeholder:text-[#77787B] h-[50px]"
+                        className="px-[17px] rounded-[6px] border border-blue bg-white outline-none w-full placeholder:text-sm placeholder:text-[#77787B] h-[50px] text-[#000]"
                         id="phone"
                         name="phone"
                         placeholder="Nhập Số điện thoại"
@@ -204,7 +204,7 @@ const PopupRegister = () => {
                     </div>
                     <div>
                       <input
-                        className="px-[17px] rounded-[6px] border border-blue bg-white outline-none w-full placeholder:text-sm placeholder:text-[#77787B] h-[50px]"
+                        className="px-[17px] rounded-[6px] border border-blue bg-white outline-none w-full placeholder:text-sm placeholder:text-[#77787B] h-[50px] text-[#000]"
                         id="company"
                         name="company"
                         placeholder="Tên công ty"
@@ -215,7 +215,7 @@ const PopupRegister = () => {
                     </div>
                     <div>
                       <input
-                        className="px-[17px] rounded-[6px] border border-blue bg-white outline-none w-full placeholder:text-sm placeholder:text-[#77787B] h-[50px]"
+                        className="px-[17px] rounded-[6px] border border-blue bg-white outline-none w-full placeholder:text-sm placeholder:text-[#77787B] h-[50px] text-[#000]"
                         id="position"
                         name="position"
                         placeholder="Nghề nghiệp/Chức vụ"

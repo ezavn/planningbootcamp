@@ -177,6 +177,59 @@
   }
 }
 
+.agenda {
+  &-btn {
+    border-radius: 6px;
+    height: 65px;
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+    p {
+      font-weight: 700;
+    }
+  }
+  &-btn.--day1 {
+    background-image: linear-gradient(to right, #4eb9db, #014e95) !important;
+    border: 1px solid #097ba5;
+    box-shadow: 0px 0px 14px #349cf1;
+  }
+  &-btn.--day2 {
+    background-image: linear-gradient(to right, #f56c41, #d8004a) !important;
+    border: 1px solid #f56c41;
+    box-shadow: 0px 0px 17px 2px #d8004a;
+  }
+  &-btn.--day3 {
+    background-image: linear-gradient(to right, #c84565, #5400be) !important;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 18px 1px #5400be;
+  }
+  &-dropdown {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    cursor: pointer;
+  }
+}
+.gala {
+  background-image: linear-gradient(
+    296.64deg,
+    #d8004a -32.4%,
+    #41b9ea 13.43%,
+    #f6820a 50.02%,
+    #d63c86 81.73%,
+    #cd163f 91.02%
+  ) !important;
+}
+
 .backtotop {
   background: linear-gradient(
     90deg,
@@ -196,6 +249,11 @@
 
 .countdown {
   background-image: linear-gradient(to right, #54fdd7 0.01%, #53dbfe 99.98%);
+}
+
+#agenda {
+  // background: linear-gradient(rgba(50, 123, 189, 0.69), rgba(0, 49, 95, 0));
+  background-image: linear-gradient(to bottom, #18264c, #114b8a);
 }
 
 .register-btn {
@@ -227,6 +285,27 @@
   width: 10px !important;
   height: 10px !important;
   margin: 0 2px !important;
+}
+
+.ticket-slide .slick-next,
+.ticket-slide .slick-prev {
+  width: 40px !important;
+  height: 40px !important;
+  z-index: 99 !important;
+}
+
+.ticket-slide .slick-prev {
+  left: -15px !important;
+}
+
+.ticket-slide .slick-next {
+  right: -15px !important;
+}
+
+.ticket-slide .slick-prev:before,
+.ticket-slide .slick-next:before {
+  font-size: 30px !important;
+  color: rgba(17, 75, 138, 0.8) !important;
 }
 
 .btn-scale {
