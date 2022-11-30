@@ -71,7 +71,7 @@ const Coach = () => {
               data-aos-delay="200"
               img="images/tamy.png"
               nickname="TAMY"
-              name="LÊ THỊ THẢO"
+              name="LÊ THỊ NGỌC THẢO"
               coach="BUSINESS COACH"
             ></CoachItem>
             <CoachItem
@@ -185,7 +185,7 @@ const Coach = () => {
                 data-aos-duration="1000"
                 img="images/tamy.png"
                 nickname="TAMY"
-                name="LÊ THỊ THẢO"
+                name="LÊ THỊ NGỌC THẢO"
                 coach="BUSINESS COACH"
               ></CoachItem>
               <CoachItem

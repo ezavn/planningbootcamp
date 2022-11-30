@@ -183,7 +183,7 @@ const AgendaV2 = () => {
             </div>
           </div>
         </div>
-        <p className="mt-[15px] text-[#C51111] italic text-[18px]">
+        <p className="mt-[15px] italic text-[18px] text-center">
           *Lịch trình có thể thay đổi và sẽ được chúng tôi cập nhật liên tục
         </p>
       </div>
